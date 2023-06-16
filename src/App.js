@@ -2,15 +2,15 @@ import React from 'react'
 import {Routes, Route, Link, BrowserRouter} from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd';
 import {Navbar,Homepage, Exchanges, Cryptocurrencies, News, CryptoDetails} from './components';
+import './App.css'
 
 const App = () => {
   return (
-    // <BrowserRouter>
-    <div className='App'>
-       <div className='Navbar'>
+     <div className='App'>
+       <div className='navbar'>
        <Navbar />
        </div>
-       <div className='main'>
+       <div className='main' >
         <Layout>
             <div className='routes'>
                 <Routes>
@@ -27,7 +27,6 @@ const App = () => {
         
        </div>
     </div>
-    // </BrowserRouter>
 
     
   )
